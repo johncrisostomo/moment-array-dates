@@ -1,6 +1,6 @@
 {
   "name": "moment-array-dates",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A small utility function that returns an array of dates based on two dates entered and a format",
   "main": "index.js",
   "scripts": {

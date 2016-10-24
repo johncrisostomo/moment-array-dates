@@ -1,9 +1,18 @@
 var should = require('chai').should(),
+    expect = require('chai').expect,
     getDateRange = require('../index');
 
 describe('getDateRange', function() {
   it('returns an array of dates based on startDate and end Date', function() {
     getDateRange('09/01/2016', '09/30/2016').should.be.a('Array');
+  });
+
+  it('should throw an error for invalid startDate', function() {
+    expect(function () { getDateRange('malformed date', '09/30/2016') }).to.throw(Error);
+  });
+
+  it('should throw an error for invalid endDate', function() {
+    expect(function() { getDateRange('09/01/2016', 'malformed date') }).to.throw(Error);
   });
 
   it('should return the correct array based on the format', function() {
