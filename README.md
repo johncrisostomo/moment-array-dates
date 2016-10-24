@@ -1,4 +1,4 @@
-# Date Range Array
+# Moment Array Dates
 
 A small utility function that returns an array of dates based on two dates entered and a format.
 
