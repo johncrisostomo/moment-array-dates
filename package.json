@@ -4,7 +4,9 @@
   "description": "A small utility function that returns an array of dates based on two dates entered and a format",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec"
+    "test": "./node_modules/.bin/mocha --reporter spec",
+    "coverage": "node node_modules/.bin/istanbul cover _mocha -- -R test",
+    "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls"
   },
   "repository": {
     "type": "git",
@@ -27,7 +29,9 @@
     "moment": "^2.15.1"
   },
   "devDependencies": {
-    "mocha": "~1.16.2",
-    "chai": "~1.8.1"
+    "chai": "~1.8.1",
+    "coveralls": "^2.11.14",
+    "istanbul": "^0.4.5",
+    "mocha": "~1.16.2"
   }
 }
