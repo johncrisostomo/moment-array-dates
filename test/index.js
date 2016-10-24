@@ -21,7 +21,7 @@ describe('getDateRange', function() {
     getDateRange('09/01/2016', '09/05/2016', 'MMM DD').should.be.eql(correctOutput);
   });
 
-  it('should return an array sorted in ascending order if last param is true", function() {
+  it('should return an array sorted in ascending order if last param is true', function() {
     const correctOutput = [ 'Sep 01', 'Sep 02', 'Sep 03', 'Sep 04', 'Sep 05' ];
 
     getDateRange('09/01/2016', '09/05/2016', 'MMM DD', true).should.be.eql(correctOutput);
