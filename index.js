@@ -3,8 +3,8 @@ const moment = require('moment');
 module.exports = function(startDate, endDate, dateFormat) {
   let dates = [];
 
-  let start = moment(startDate);
-  let end = moment(endDate);
+  let start = moment(new Date(startDate));
+  let end = moment(new Date(endDate));
 
   let difference = end.diff(start, 'days');
 
@@ -12,7 +12,9 @@ module.exports = function(startDate, endDate, dateFormat) {
     throw Error("Invalid dates specified. Please check format and or make sure that the dates are different");
   }
 
-  for(let i = 0; i < diff; i++) {
+  dates.push(end.format(dateFormat));
+
+  for(let i = 0; i < difference; i++) {
     dates.push(end.subtract(1, 'd').format(dateFormat));
   }
 
