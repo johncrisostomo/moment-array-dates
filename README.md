@@ -5,14 +5,14 @@ A small utility function that returns an array of dates based on two dates enter
 ### Installation
 
 ```
-npm install --save date-range-array
+npm install --save moment-array-dates
 ```
 
 ### Usage
 
 Import date range array:
 ```
-var getDateRange = require('date-range-array');
+var getDateRange = require('moment-array-dates');
 ```
 
 Pass start date and date range:
