@@ -1,14 +1,14 @@
 {
   "name": "moment-array-dates",
-  "version": "1.0.0",
-  "description": "A function that returns an array of dates based on two dates entered and a format",
+  "version": "1.0.2",
+  "description": "A small utility function that returns an array of dates based on two dates entered and a format",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter spec"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/johncrisostomo/date-range-array.git"
+    "url": "git+https://github.com/johncrisostomo/moment-array-dates.git"
   },
   "keywords": [
     "date",
@@ -20,9 +20,9 @@
   "author": "John Crisostomo",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/johncrisostomo/date-range-array/issues"
+    "url": "https://github.com/johncrisostomo/moment-array-dates/issues"
   },
-  "homepage": "https://github.com/johncrisostomo/date-range-array#readme",
+  "homepage": "https://github.com/johncrisostomo/moment-array-dates#readme",
   "dependencies": {
     "moment": "^2.15.1"
   },
