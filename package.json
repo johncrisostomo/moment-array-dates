@@ -1,0 +1,29 @@
+{
+  "name": "date-range-array",
+  "version": "1.0.0",
+  "description": "A function that returns an array of dates based on two dates entered and a format",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johncrisostomo/date-range-array.git"
+  },
+  "keywords": [
+    "date",
+    "array",
+    "moment",
+    "momentjs",
+    "range"
+  ],
+  "author": "John Crisostomo",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/johncrisostomo/date-range-array/issues"
+  },
+  "homepage": "https://github.com/johncrisostomo/date-range-array#readme",
+  "dependencies": {
+    "moment": "^2.15.1"
+  }
+}
