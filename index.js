@@ -2,7 +2,7 @@ var moment = require('moment');
 
 module.exports = function(startDate, endDate, dateFormat, ascending) {
   var dates = [];
-  var ascending = ascending || false;
+  ascending = ascending || false;
 
   var start = moment(new Date(startDate));
   var end = moment(new Date(endDate));
