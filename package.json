@@ -1,7 +1,7 @@
 {
   "name": "moment-array-dates",
-  "version": "1.0.6",
-  "description": "A small utility function that accepts two dates, and returns an array of formatted date strings.",
+  "version": "2.0.0",
+  "description": "A small utility function that returns an array of formatted date strings.",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter spec",
@@ -14,6 +14,7 @@
   },
   "keywords": [
     "date",
+    "format",
     "array",
     "moment",
     "momentjs",
