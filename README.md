@@ -5,6 +5,7 @@
 [![Build Status](https://travis-ci.org/johncrisostomo/moment-array-dates.svg?branch=master)](https://travis-ci.org/johncrisostomo/moment-array-dates)
 [![Coverage Status](https://coveralls.io/repos/github/johncrisostomo/moment-array-dates/badge.svg?branch=master)](https://coveralls.io/github/johncrisostomo/moment-array-dates?branch=master)
 [![Code Climate](https://codeclimate.com/github/johncrisostomo/moment-array-dates/badges/gpa.svg)](https://codeclimate.com/github/johncrisostomo/moment-array-dates)
+[![npm](https://img.shields.io/badge/npm-v2.0.0-blue.svg)](https://www.npmjs.com/package/moment-array-dates)
 
 ### Installation
 
@@ -50,4 +51,4 @@ Output: `[ 'Oct 26', 'Oct 27', 'Oct 28', 'Oct 29', 'Oct 30' ]`
 License
 ----
 
-GPL-v3
+MIT
