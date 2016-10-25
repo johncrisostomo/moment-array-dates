@@ -77,7 +77,7 @@ function nextNDays(days, dateFormat, ascending) {
 }
 
 module.exports = {
-  rangeArray: range,
+  range: range,
   lastNDays: lastNDays,
   nextNDays: nextNDays
 }
