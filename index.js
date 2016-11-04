@@ -1,5 +1,15 @@
 var moment = require('moment');
 
+function pushDates(difference, end, format) {
+  const arr = [];
+
+  for(var i = 0; i < difference; i++) {
+    arr.push(end.subtract(1, 'd').format(format));
+  }
+
+  return arr;
+}
+
 function range(startDate, endDate, dateFormat, ascending) {
   var dates = [];
   ascending = ascending || false;
@@ -15,9 +25,7 @@ function range(startDate, endDate, dateFormat, ascending) {
 
   dates.push(end.format(dateFormat));
 
-  for(var i = 0; i < difference; i++) {
-    dates.push(end.subtract(1, 'd').format(dateFormat));
-  }
+  dates = dates.concat(pushDates(difference, end, dateFormat));
 
   if(ascending) {
     return dates.reverse();
@@ -40,9 +48,7 @@ function lastNDays(days, dateFormat, ascending) {
 
   var difference = end.diff(start, 'days');
 
-  for(var i = 0; i < difference; i++) {
-    dates.push(end.subtract(1, 'd').format(dateFormat));
-  }
+  dates = dates.concat(pushDates(difference, end, dateFormat));
 
   if (ascending) {
     return dates.reverse();
@@ -65,9 +71,7 @@ function nextNDays(days, dateFormat, ascending) {
 
   var difference = end.diff(start, 'days');
 
-  for(var i = 0; i < difference; i++) {
-    dates.push(end.subtract(1, 'd').format(dateFormat));
-  }
+  dates = dates.concat(pushDates(difference, end, dateFormat));
 
   if (ascending) {
     return dates.reverse();

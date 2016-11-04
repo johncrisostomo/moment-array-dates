@@ -1,6 +1,6 @@
 {
   "name": "moment-array-dates",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A small utility function that returns an array of formatted date strings.",
   "main": "index.js",
   "scripts": {
