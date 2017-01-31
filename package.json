@@ -1,6 +1,6 @@
 {
   "name": "moment-array-dates",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "A small utility function that returns an array of formatted date strings.",
   "main": "index.js",
   "scripts": {
@@ -27,12 +27,12 @@
   },
   "homepage": "https://github.com/johncrisostomo/moment-array-dates#readme",
   "dependencies": {
-    "moment": "^2.15.1"
+    "moment": "^2.17.1"
   },
   "devDependencies": {
-    "chai": "~1.8.1",
-    "coveralls": "^2.11.14",
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.15",
     "istanbul": "^0.4.5",
-    "mocha": "~1.16.2"
+    "mocha": "^3.2.0"
   }
 }
