@@ -14,8 +14,8 @@ function range(startDate, endDate, dateFormat, ascending) {
   var dates = [];
   ascending = ascending || false;
 
-  var start = moment(new Date(startDate));
-  var end = moment(new Date(endDate));
+  var start = moment.utc(new Date(startDate));
+  var end = moment.utc(new Date(endDate));
 
   var difference = end.diff(start, 'days');
 
