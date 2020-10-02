@@ -27,6 +27,20 @@ describe('dateArray.range', function() {
 
     dateArray.range('09/01/2016', '09/05/2016', 'MMM DD', true).should.be.eql(correctOutput);
   });
+
+  it("should return the correct array when start and end format is yyyy-mm-dd", function () {
+    const correctOutput = [
+      "01/26/2020",
+      "01/27/2020",
+      "01/28/2020",
+      "01/29/2020",
+      "01/30/2020",
+      "01/31/2020"
+    ];
+    dateArray
+      .range("2020-01-26", "2020-01-31", "L", true)
+      .should.be.eql(correctOutput);
+  });
 });
 
 describe('dateArray.lastNDays', function() {
